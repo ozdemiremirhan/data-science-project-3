@@ -1,13 +1,13 @@
 import psycopg2
 
 ## Bu değeri localinde çalışırken kendi passwordün yap. Ama kodu pushlarken 'postgres' olarak bırak.
-password = '123456'
+password = 'postgres'
 
 def connect_db():
     conn = psycopg2.connect(
     host="localhost",
     port=5432,
-    database="DataScienceProject3",
+    database="postgres",
     user="postgres",
     password=password)
     return conn
